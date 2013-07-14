@@ -11,4 +11,10 @@ clean:
 test:
 	node ./test/node.js
 
-.PHONY: test
+test-browser:
+	brofist-browser serve test/specs
+
+docs:
+	cd docs && make html
+
+.PHONY: test test-browser docs

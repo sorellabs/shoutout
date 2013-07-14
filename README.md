@@ -1,5 +1,11 @@
-Shout-out [![Build Status](https://travis-ci.org/killdream/shoutout.png)](https://travis-ci.org/killdream/shoutout) ![Dependencies Status](https://david-dm.org/killdream/shoutout.png)
-==========
+Shout-out v1.0.1
+================
+
+[![Build status](https://travis-ci.org/killdream/shoutout.png)](https://travis-ci.org/killdream/shoutout)
+[![Dependencies status](https://david-dm.org/killdream/shoutout.png)](https://david-dm.org/killdream/shoutout)
+
+[![Browser support](https://ci.testling.com/killdream/shoutout.png)](http://ci.testling.com/killdream/shoutout)
+
 
 The simplest eventing library that could possible work.
 
@@ -18,31 +24,25 @@ clicked(10, 10)
 
 ## Installing
 
-The easiest way is to grab it from NPM (use [Browserify][] if you're on a
-browser):
+Easy-modo: grab it from NPM (use [Browserify][] if you're on a browser):
 
     $ npm install shoutout
     
-If you **really** want to continue suffering with old and terrible module
-systems (or use no module system at all), you can run `make bundle` yourself:
-
-    $ git clone git://github.com/killdream/shoutout
-    $ cd shoutout
-    $ npm install
-    $ make bundle
-    # Then use `dist/shoutout.umd.js` wherever you want.
+> If you're using AMD or no module system at all, you can grab the
+> `dist/{:project}.umd.js` file. Note that NPM is the recommended and
+> officially supported way, and that the UMD bundle will include all the
+> dependencies for the library.
     
 [browserify]: https://github.com/substack/node-browserify
 
 
-## Platform support
+## Documentation
 
-This library assumes an ES5 environment, but can be easily supported in ES3
-platforms by the use of shims. Just include [es5-shim][] :3
+Read online at http://shoutout.rtfd.org/ or build your own local copy:
 
-[es5-shim]: https://github.com/kriskowal/es5-shim
-
-[![browser support](https://ci.testling.com/killdream/shoutout.png)](http://ci.testling.com/killdream/shoutout)
+    $ make docs
+    
+> Note that you'll need [Sphinx](http://sphinx-doc.org/)
 
 
 ## Tests
@@ -54,35 +54,38 @@ For node:
 For the browser:
 
     $ npm install -g brofist-browser
-    $ make test
-    $ brofist-browser serve test/specs
-    # Then point your browsers to the URL on yer console.
+    $ make test-browser
 
 
-## API
+## Platform support
 
-### `signal()`
+This library assumes an ES5 environment, but can be easily supported in ES3
+platforms by the use of shims. Just include [es5-shim][] :3
 
-Creates a new signal object.
+[es5-shim]: https://github.com/kriskowal/es5-shim
 
-### `Signal:add(f)`
 
-Adds the given function as a handler.
+## Support
 
-### `Signal:once(f)`
+  - Use the [Github tracker][] for reporting bugs/requesting features.
+  - The [Google Group][] for general discussion.
+  - Follow [@orphoundation][] on Twitter for quick updates.
+  - Check the [Google+ community][] for major updates.
 
-Adds the given function as a handler, evaluates it only once.
 
-### `Signal:remove(f)`
+[Github tracker]: https://github.com/killdream/shoutout/issues
+[Google group]: https://groups.google.com/group/orphoundation
+[@orphoundation]: http://twitter.com/orphoundation
+[Google+ community]: https://plus.google.com/communities/102026244049761348627
 
-Removes the function.
 
-### `Signal(...)`
+## Developers
 
-Calls all the handlers.
-
+  - Maintainers: [Quildreen Motta](https://github.com/killdream)
+  - [Contributors](https://github.com/killdream/shoutout/contributors)
+ 
 
 
 ## Licence
 
-MIT/X11. i.e.: Do whatever you fucking want, bro.
+MIT/X11. i.e.: do whatever you want.
