@@ -17,4 +17,14 @@ test-browser:
 docs:
 	cd docs && make html
 
-.PHONY: test test-browser docs
+report:
+	$(bin)/plato -t "Shoutout - source analysis" -l .jshintrc -d report shoutout.js
+
+coverage:
+	$(bin)/istanbul cover test/tap.js --print none
+
+release:
+	$(MAKE) report
+	npm publish
+
+.PHONY: test test-browser docs coverage report release

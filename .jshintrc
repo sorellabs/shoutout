@@ -1,0 +1,13 @@
+{ "camelcase": true
+, "noarg": true
+, "noempty": true
+, "undef": true
+, "unused": true
+, "trailing": true
+, "asi": true
+, "eqnull": true
+, "laxcomma": true
+, "node": true
+, "supernew": true
+, "laxbreak": true
+}
