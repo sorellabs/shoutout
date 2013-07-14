@@ -29,7 +29,7 @@ Easy-modo: grab it from NPM (use [Browserify][] if you're on a browser):
     $ npm install shoutout
     
 > If you're using AMD or no module system at all, you can grab the
-> `dist/{:project}.umd.js` file. Note that NPM is the recommended and
+> `dist/shoutout.umd.js` file. Note that NPM is the recommended and
 > officially supported way, and that the UMD bundle will include all the
 > dependencies for the library.
     
