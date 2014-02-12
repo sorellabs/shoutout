@@ -44,6 +44,7 @@ module.exports = spec('Module: shoutout', function(it, spec) {
 
       s.once(push)
       s(1)
+      s(2)
 
       assert.deepEqual(p, [1])
     })
