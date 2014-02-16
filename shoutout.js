@@ -76,8 +76,10 @@ function signal() {
   //
   // :: (A... -> B) -> Signal
   function once(f) {
-    add(function() { f.apply(this, arguments)
-                     remove(f) })
+    function g() {
+      f.apply(this, arguments)
+      remove(g) }
+    add(g)
     return notify }
 
   // ### Function remove
