@@ -1,10 +1,12 @@
-Shout-out v1.0.1
-================
+Shout-out
+=========
 
-[![Build status](https://travis-ci.org/killdream/shoutout.png)](https://travis-ci.org/killdream/shoutout)
-[![Dependencies status](https://david-dm.org/killdream/shoutout.png)](https://david-dm.org/killdream/shoutout)
+[![Build Status](https://secure.travis-ci.org/robotlolita/shoutout.png?branch=master)](https://travis-ci.org/robotlolita/shoutout)
+[![NPM version](https://badge.fury.io/js/shoutout.png)](http://badge.fury.io/js/shoutout)
+[![Dependencies Status](https://david-dm.org/robotlolita/shoutout.png)](https://david-dm.org/robotlolita/shoutout)
+[![stable](http://hughsk.github.io/stability-badges/dist/stable.svg)](http://github.com/hughsk/stability-badges)
 
-[![Browser support](https://ci.testling.com/killdream/shoutout.png)](http://ci.testling.com/killdream/shoutout)
+[![Browser support](https://ci.testling.com/robotlolita/shoutout.png)](http://ci.testling.com/robotlolita/shoutout)
 
 
 The simplest eventing library that could possible work.
@@ -81,8 +83,8 @@ platforms by the use of shims. Just include [es5-shim][] :3
 
 ## Developers
 
-  - Maintainers: [Quildreen Motta](https://github.com/killdream)
-  - [Contributors](https://github.com/killdream/shoutout/contributors)
+  - Maintainers: [Quildreen Motta](https://github.com/robotlolita)
+  - [Contributors](https://github.com/robotlolita/shoutout/contributors)
  
 
 
