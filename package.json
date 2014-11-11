@@ -2,7 +2,7 @@
   "author": "Quildreen \"Sorella\" Motta <quildreen@gmail.com>",
   "name": "shoutout",
   "description": "The simplest eventing library that could possible work.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/killdream/shoutout.git"
