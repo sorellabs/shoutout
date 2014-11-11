@@ -86,7 +86,11 @@ API Reference
    :param Function f: The function that'll stop listening to the signal.
    :returns: Signal the signal instance.
 
-   Removes a listener from the signal. If no function is given, all
-   listeners are removed from the signal.
+   Removes a listener from the signal.
 
 
+.. js:function:: Signal.removeAll()
+   
+   :returns: Signal the signal instance.
+
+   Removes all listeners from the signal.

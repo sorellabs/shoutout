@@ -45,9 +45,10 @@ function isnt(a) { return function(b) { return b !== a }}
 function signal() {
   var handlers = []
 
-  notify.add    = add
-  notify.once   = once
-  notify.remove = remove
+  notify.add       = add
+  notify.once      = once
+  notify.remove    = remove
+  notify.removeAll = removeAll
 
   return notify
 
@@ -89,6 +90,15 @@ function signal() {
   // :: (A... -> B) -> Signal
   function remove(f) {
     handlers = handlers.filter(isnt(f))
+    return notify }
+
+  // ### Function removeAll
+  //
+  // Removes all handlers.
+  //
+  // :: Void -> Signal
+  function removeAll() {
+    handlers.length = 0
     return notify }
 }
 
